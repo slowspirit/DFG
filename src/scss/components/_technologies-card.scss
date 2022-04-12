@@ -1,0 +1,35 @@
+.technologies-card {
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    background-color: $white;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__image {
+        margin-right: 18px;
+    }
+
+    &__jobs {
+        font-weight: 500;
+        font-size: $font-size-normal;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $trinidad;
+        background-color: $bg-pink;
+        padding: 5px 12px;
+        border-radius: 30px;
+        margin-bottom: 6px;
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}

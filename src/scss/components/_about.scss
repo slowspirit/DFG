@@ -1,0 +1,47 @@
+.about {
+    margin-bottom: 150px;
+
+    &__texts {
+        display: flex;
+    }
+
+    &__text {
+        margin-bottom: 47px;
+
+        &:first-child {
+            max-width: 470px;
+            margin-right: 67px;
+        }
+    }
+
+    &__list {}
+
+    &__list-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -10px;
+        margin-bottom: 20px;
+
+        &:nth-child(2) {
+            margin-bottom: 0;
+
+            & .about-card:nth-child(2) {
+                p {
+                    font-size: 22px;
+                }
+            }
+
+            & .about-card:nth-child(4) {
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        flex: 0 1 24%;
+        margin: 0 10px;
+    }
+}

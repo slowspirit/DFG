@@ -5,15 +5,30 @@ $screen-mobile: "(max-width: 767px)";
 
 
 // Colors
-
 $white: #ffffff;
-$black: #000000;
+$black: #212121;
+$alto: #E0E0E0;
+$gray-nurse: #F7F8F7;
+$boulder: #7D7D7D;
+$comet: #536076;
+$emperor: #4F4F4F;
+$dodger-blue: #2979FF;
+$trinidad: #E65100;
+$fair-pink: #FFEFE9;
+$zumthor: #ECF3FF;
+$whisper: #F9F9FC;
 
+$accent: $dodger-blue;
+$accent-secondary: $trinidad;
+$bg-gray: $gray-nurse;
+$bg-pink: $fair-pink;
+$bg-blue: $zumthor;
 
 //Fonts sizes
 
 $font-size-normal: 16px;
 
+$font-size-extraLarge: 24px;
 $font-size-large: 20px;
 $font-size-medium: 18px;
 $font-size-small: 14px;

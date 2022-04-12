@@ -1,0 +1,11 @@
+.talk-box {
+    max-width: 536px;
+    padding: 40px 25px;
+    border: 2px solid rgba($accent, .25);
+    text-align: center;
+    color: $comet;
+
+    &__button {
+        width: 192px;
+    }
+}

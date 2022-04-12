@@ -1,6 +1,6 @@
 @import "libs"; // Файлы стилей вендоров/плвгинов
 @import "vars"; // Переменные
-// @import "fonts"; // Подключение шрифтов
+@import "fonts"; // Подключение шрифтов
 @import "reset"; // Сброс стилей
 @import "global"; // Подключение глбальных стилей
 
@@ -10,13 +10,30 @@
 
 //  Пример подключения стилей блоков
 @import "components/container";
+@import "components/button";
+@import "components/link";
+@import "components/title";
+@import "components/accordion";
+
 @import "components/header";
 @import "components/menu";
-@import "components/footer";
-@import "components/breadcrumbs";
-@import "components/pagination";
-@import "components/accordion";
-@import "components/input-number";
-@import "components/title";
-@import "components/button";
-@import "components/form";
+@import "components/hero";
+@import "components/audit";
+@import "components/auditors-card";
+@import "components/clients";
+@import "components/talk-box";
+@import "components/achievements";
+@import "components/cases";
+@import "components/case-card";
+@import "components/technologies";
+@import "components/technologies-card";
+@import "components/about";
+@import "components/about-card";
+@import "components/questions";
+@import "components/guide";
+@import "components/universum-hero";
+@import "components/client";
+@import "components/scope";
+@import "components/scope-item";
+@import "components/challenges";
+@import "components/result";

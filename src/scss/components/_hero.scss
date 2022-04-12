@@ -1,0 +1,35 @@
+.hero {
+    background-image: url("@img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 35px 0 10px;
+    margin-bottom: 150px;
+
+    &__inner {}
+
+    &__title {
+        width: 970px;
+        margin-bottom: 20px;
+
+        & span {
+            color: $accent;
+        }
+    }
+
+    &__text {
+        font-size: 25px;
+        line-height: 30px;
+
+        & span {
+            font-weight: 600;
+            color: $accent;
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+
+    &__audit {
+        margin-top: 60px;
+    }
+}

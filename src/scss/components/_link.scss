@@ -1,0 +1,29 @@
+.link {
+    display: inline-block;
+    font-weight: 600;
+    color: $accent;
+
+
+    &--orange {
+        color: $accent-secondary;
+    }
+
+    &--arrow {
+        padding-right: 28px;
+        position: relative;
+        font-size: 24px;
+        line-height: 29px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 24px;
+            height: 24px;
+            top: 3px;
+            right: 0;
+            background-image: url("@img/icons/arrow.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

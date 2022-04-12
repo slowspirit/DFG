@@ -1,0 +1,14 @@
+.client {
+    padding: 0 0 50px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 600px;
+        padding-top: 130px;
+    }
+
+}

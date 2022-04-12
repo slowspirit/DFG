@@ -1,1 +1,45 @@
-.button {}
+.button {
+    display: inline-block;
+    padding: 16px 42px;
+    background-color: $accent;
+    color: $white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: $font-size-large;
+    line-height: 20px;
+    border: 2px solid transparent;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: $accent;
+        border: 2px solid $accent;
+    }
+
+    &--white {
+        padding: 13px 37px;
+        background-color: $white;
+        color: $accent;
+        border: 2px solid $accent;
+
+        &:hover {
+            background-color: $accent;
+            color: $white;
+        }
+    }
+
+    &--linkStyle {
+        color: $accent;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+        font-weight: 600;
+
+        &:hover {
+            border: 2px solid transparent;
+            background-color: transparent;
+        }
+    }
+
+}

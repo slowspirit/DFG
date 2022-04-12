@@ -1,20 +1,36 @@
 .accordion {
+    width: 700px;
+
     &__items {
-        max-width: 757px;
+        width: 100%;
         padding: 15px 0;
     }
 
     &__item {
-        max-width: 690px;
-        background-color: lightseagreen;
+        width: 100%;
+        background-color: $white;
         position: relative;
+        border-bottom: 1px solid $alto;
+        transition: all .3s;
+    }
+
+    &__title-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        & svg {
+            transition: all .3s;
+        }
     }
 
     &__item-title {
-        font-size: $font-size-medium;
-        line-height: 20px;
-        color: $white;
-        padding: 20px 10px 20px 40px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 32px;
+        color: $black;
+        padding: 8px 0 15px;
         margin-bottom: 4px;
         position: relative;
         cursor: pointer;
@@ -24,39 +40,36 @@
             font-size: $font-size-small;
         }
 
-        &::after {
-            position: absolute;
-            content: "+";
-            width: 72px;
-            height: 60px;
-            background-color: lightsalmon;
-            right: -72px;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        // &::after {
+        //     position: absolute;
+        //     content: "+";
+        //     width: 72px;
+        //     height: 60px;
+        //     background-color: lightsalmon;
+        //     right: -72px;
+        //     top: 0;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
 
-            @media #{$screen-mobile} {
-                right: 0;
-                height: 100%;
-            }
-        }
+        //     @media #{$screen-mobile} {
+        //         right: 0;
+        //         height: 100%;
+        //     }
+        // }
 
-        &.accordion__item-title--active {
-            &::after {
-                content: "-";
-            }
-        }
 
     }
 
+    &__text-box {
+        display: none;
+    }
 
     &__item-text {
-        padding: 0 5px 40px 40px;
-        font-size: $font-size-small;
-        line-height: 22px;
+        padding: 0 0 10px;
+        font-size: $font-size-normal;
+        line-height: 23px;
         margin: 0 0 4px;
-        display: none;
 
         @media #{$screen-mobile} {
             right: 0;
@@ -65,11 +78,17 @@
     }
 
     &__item.accordion__item--active {
-        // & .accordion__item-title::after {
-        //     content: "-";
-        // }
+        & .accordion__title-box {
+            & svg {
+                transform: rotate(45deg);
 
-        .accordion__item-text {
+                path {
+                    stroke: $alto;
+                }
+            }
+        }
+
+        .accordion__text-box {
             display: block;
         }
     }

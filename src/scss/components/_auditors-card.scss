@@ -1,0 +1,42 @@
+.auditors-card {
+    padding: 30px 40px;
+    background-color: $bg-gray;
+    height: 306px;
+
+    &:hover {
+        & .auditors-card__title {
+            transition: all .2s;
+            color: $accent;
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__image {
+        border-radius: 50%;
+        margin-right: 30px;
+    }
+
+    &__header {
+        width: 248px;
+    }
+
+    &__title {
+        transition: all .2s;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 31px;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        color: $boulder;
+        font-size: $font-size-large;
+        line-height: 26px;
+    }
+
+}

@@ -1,0 +1,62 @@
+.universum-hero {
+    padding: 40px 0 45px;
+    background-image: url("@img/universum-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__top {
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+        // overflow: hidden;
+    }
+
+    &__info {
+        width: 678px;
+        flex: 1 0 auto;
+        margin-top: 50px;
+        margin-right: 21px;
+    }
+
+    &__subtitle {
+        color: $accent;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    &__title {
+        margin-bottom: 57px;
+    }
+
+    &__table {
+        width: 1012px;
+        border-collapse: collapse;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+
+        tr {
+            &:first-child {
+                td {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        td {
+            border-bottom: 1px solid rgba($accent, .15);
+            padding: 20px 0;
+
+            &:first-child {
+                width: 310px;
+                color: $boulder;
+            }
+        }
+
+        a {
+            font-weight: 400;
+        }
+    }
+}

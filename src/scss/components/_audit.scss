@@ -1,0 +1,51 @@
+.audit {
+    &--bottom {
+        margin: 150px 0 225px;
+
+        & .audit__title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+
+            & span {
+                color: $black;
+            }
+        }
+
+        & .audit__cards {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px;
+
+        & span {
+            color: $accent;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 10px;
+        margin-bottom: 30px;
+    }
+
+    &__card {
+        flex: 0 1 50%;
+        margin: 0 -10px;
+    }
+
+    &__link {
+        display: block;
+        margin: 0 auto;
+        width: 260px;
+        text-align: center;
+    }
+}

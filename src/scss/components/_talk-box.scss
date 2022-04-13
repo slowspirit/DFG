@@ -5,6 +5,10 @@
     text-align: center;
     color: $comet;
 
+    @media #{$screen-mobile} {
+        max-width: 100%;
+    }
+
     &__button {
         width: 192px;
     }

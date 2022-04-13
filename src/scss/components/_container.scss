@@ -3,10 +3,6 @@
     margin: 0 auto;
     padding: 0 15px;
 
-    @media #{$screen-tablet} {
-        padding: 0 50px;
-    }
-
     @media #{$screen-mobile} {
         padding: 0 10px;
     }

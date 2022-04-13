@@ -29,6 +29,18 @@
         }
     }
 
+    &--transparent {
+        padding: 13px 37px;
+        background-color: transparent;
+        color: $accent;
+        border: 2px solid $accent;
+
+        &:hover {
+            background-color: $accent;
+            color: $white;
+        }
+    }
+
     &--linkStyle {
         color: $accent;
         padding: 0;

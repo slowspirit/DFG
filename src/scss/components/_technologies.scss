@@ -5,6 +5,10 @@
     background-size: cover;
     background-position: center;
 
+    @media #{$screen-mobile} {
+        padding-bottom: 50px;
+    }
+
     &__inner {
         text-align: center;
     }
@@ -13,7 +17,18 @@
         margin-bottom: 40px;
     }
 
-    &__list {}
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        @media #{$screen-tablet} {
+            flex-direction: row;
+        }
+
+        @media #{$screen-mobile} {
+            flex-direction: column;
+        }
+    }
 
     &__list-row {
         display: flex;
@@ -22,14 +37,24 @@
         margin: 0 -10px;
         margin-bottom: 20px;
 
+        @media #{$screen-tablet} {
+            flex-direction: column;
+            flex: 1;
+            margin-bottom: 0;
+        }
+
         &:last-child {
             margin-bottom: 0;
+
         }
     }
 
     &__list-item {
         margin: 0 10px;
-        flex: 0 1 23%;
+
+        @media #{$screen-tablet} {
+            margin-bottom: 10px;
+        }
     }
 
 }

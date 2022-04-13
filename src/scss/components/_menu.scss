@@ -15,7 +15,7 @@
             left: 0;
             right: 0;
             height: 100vh;
-            background-color: lightseagreen;
+            background-color: $zumthor;
             transform: translateY(-200%);
             transition: all .3s;
         }
@@ -28,6 +28,10 @@
 
     &__item {
         margin-right: 30px;
+
+        @media #{$screen-tablet} {
+            margin-right: 20px;
+        }
 
         @media #{$screen-mobile} {
             margin: 25px 0;
@@ -80,8 +84,17 @@
             height: 3px;
             width: 100%;
             margin: 7px 0;
-            background-color: $black;
+            background-color: $accent;
             transition: all .3s;
+        }
+    }
+
+    &__btn-hidden {
+        display: none;
+
+        @media #{$screen-mobile} {
+            display: block;
+            margin-top: 50px;
         }
     }
 

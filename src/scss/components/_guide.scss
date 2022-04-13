@@ -5,8 +5,14 @@
     background-position: center;
     background-size: cover;
 
+    @media #{$screen-mobile} {
+        padding: 50px 0 75px;
+        background-image: url("@img/gide-bg-mobile.png");
+    }
+
     &__title {
         max-width: 794px;
+        font-size: 24px;
     }
 
     &__ul-list {
@@ -20,6 +26,11 @@
         padding-left: 32px;
         position: relative;
         margin: 5px 0;
+
+        @media #{$screen-mobile} {
+            font-size: $font-size-normal;
+            line-height: 22px;
+        }
 
         &::before {
             position: absolute;
@@ -35,7 +46,7 @@
     &__list-box {
         background-color: $white;
         padding: 20px;
-        width: 460px;
+        max-width: 460px;
         margin-bottom: 40px;
     }
 
@@ -53,6 +64,11 @@
         font-size: $font-size-large;
         line-height: 26px;
         margin-bottom: 10px;
+
+        @media #{$screen-mobile} {
+            font-size: $font-size-normal;
+            line-height: 22px;
+        }
 
         &::marker {
             font-weight: 600;
@@ -75,6 +91,13 @@
         border-radius: 8px 0 0 8px;
         border-right: 0;
 
+        @media #{$screen-mobile} {
+            width: 100%;
+            border-radius: 8px;
+            border-right: 1px solid $alto;
+            margin-bottom: 15px;
+        }
+
         ::placeholder {
             color: $comet;
         }
@@ -85,5 +108,12 @@
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         cursor: pointer;
+
+        @media #{$screen-mobile} {
+            margin: 0;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
     }
 }

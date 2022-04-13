@@ -1,6 +1,10 @@
 .accordion {
     width: 700px;
 
+    @media #{$screen-mobile} {
+        width: 100%;
+    }
+
     &__items {
         width: 100%;
         padding: 15px 0;
@@ -35,9 +39,15 @@
         position: relative;
         cursor: pointer;
 
+        @media #{$screen-tablet} {
+            font-size: $font-size-large;
+            line-height: 28px;
+            padding: 8px 5px 8px;
+        }
+
         @media #{$screen-mobile} {
-            padding: 15px 75px 15px 15px;
-            font-size: $font-size-small;
+            font-size: $font-size-medium;
+            line-height: 25px;
         }
 
         // &::after {
@@ -72,8 +82,8 @@
         margin: 0 0 4px;
 
         @media #{$screen-mobile} {
-            right: 0;
-            padding: 0 72px 40px 15px;
+            padding: 0 35px 8px 5px;
+            margin: 0;
         }
     }
 

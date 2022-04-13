@@ -2,10 +2,28 @@
     &--bottom {
         margin: 150px 0 225px;
 
+        @media #{$screen-tablet} {
+            margin: 80px 0 125px;
+        }
+
+        @media #{$screen-mobile} {
+            margin: 50px 0 85px;
+        }
+
         & .audit__title {
             font-weight: 700;
             font-size: 40px;
             line-height: 48px;
+
+            @media #{$screen-tablet} {
+                font-size: 30px;
+                line-height: 38px;
+            }
+
+            @media #{$screen-mobile} {
+                font-size: 25px;
+                line-height: 32px;
+            }
 
             & span {
                 color: $black;
@@ -23,6 +41,16 @@
         line-height: 36px;
         margin-bottom: 20px;
 
+        @media #{$screen-tablet} {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        @media #{$screen-mobile} {
+            font-size: $font-size-extraLarge;
+            line-height: 28px;
+        }
+
         & span {
             color: $accent;
         }
@@ -35,11 +63,21 @@
         flex-wrap: wrap;
         margin: 0 10px;
         margin-bottom: 30px;
+
+        @media #{$screen-mobile} {
+            margin: 0;
+            margin-bottom: 15px;
+        }
     }
 
     &__card {
         flex: 0 1 50%;
         margin: 0 -10px;
+
+        @media #{$screen-mobile} {
+            flex: 1 1 auto;
+            margin: 0 0 10px;
+        }
     }
 
     &__link {

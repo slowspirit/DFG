@@ -5,6 +5,12 @@
     padding: 40px 0 40px 40px;
     background-color: $bg-gray;
 
+    @media #{$screen-mobile} {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+
     &__info {
         display: flex;
         flex-direction: column;
@@ -12,6 +18,10 @@
         justify-content: center;
         align-self: flex-start;
         height: 100%;
+
+        @media #{$screen-tablet} {
+            // width: 100%;
+        }
     }
 
     &__logo {
@@ -35,6 +45,12 @@
         font-size: $font-size-large;
         line-height: 24px;
 
+        @media #{$screen-mobile} {
+            margin-top: 20px;
+            font-size: $font-size-normal;
+            line-height: 22px;
+        }
+
         & span {
             font-weight: 400;
             color: $boulder;
@@ -43,5 +59,15 @@
 
     &__link {
         margin-top: auto;
+
+        @media #{$screen-mobile} {
+            font-size: $font-size-medium;
+        }
+    }
+
+    &__image-box {
+        @media #{$screen-mobile} {
+            display: none;
+        }
     }
 }

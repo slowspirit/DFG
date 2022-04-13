@@ -6,11 +6,19 @@
     padding: 35px 0 10px;
     margin-bottom: 150px;
 
+    @media #{$screen-tablet} {
+        margin-bottom: 50px;
+    }
+
+    @media #{$screen-mobile} {
+        padding: 20px 0 10px;
+    }
+
     &__inner {}
 
     &__title {
-        width: 970px;
-        margin-bottom: 20px;
+        max-width: 970px;
+        margin-bottom: 30px;
 
         & span {
             color: $accent;
@@ -21,15 +29,35 @@
         font-size: 25px;
         line-height: 30px;
 
+        @media #{$screen-tablet} {
+            font-size: $font-size-large;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+
         & span {
             font-weight: 600;
             color: $accent;
             font-size: 30px;
             line-height: 36px;
+
+            @media #{$screen-tablet} {
+                font-size: $font-size-extraLarge;
+                line-height: 28px;
+            }
+
         }
     }
 
     &__audit {
         margin-top: 60px;
+
+        @media #{$screen-tablet} {
+            margin-top: 40px;
+        }
+
+        @media #{$screen-mobile} {
+            margin-top: 20px;
+        }
     }
 }

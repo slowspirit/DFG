@@ -1,14 +1,28 @@
 .clients {
     margin-bottom: 150px;
 
+    @media #{$screen-tablet} {
+        margin-bottom: 50px;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media #{$screen-mobile} {
+            flex-wrap: wrap;
+        }
     }
 
     &__info {
         max-width: 590px;
+        margin-right: 20px;
+
+        @media #{$screen-mobile} {
+            max-width: 100%;
+            margin-right: 0;
+        }
     }
 
     &__title {
@@ -18,20 +32,39 @@
     &__text {
         max-width: 495px;
         margin-bottom: 28px;
+
+        @media #{$screen-mobile} {
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
     }
 
     &__list {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media #{$screen-tablet} {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
     }
 
     &__list-item {
         margin-right: 15px;
 
+        @media #{$screen-tablet} {
+            margin: 10px;
+        }
+
         &:last-child {
             margin-right: 0;
         }
+    }
+
+    &__talk-box {
+        width: 100%;
     }
 
 }

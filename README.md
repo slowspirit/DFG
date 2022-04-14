@@ -1,4 +1,8 @@
 # DFG
-## Адаптивная верстка лендинга агентства услуг и страницы с примером одного из его кейсов (uniersum).
+## Адаптивная верстка лендинга.
+<div>
+<img src="./files/DFG_main_500.png">&thinsp;&thinsp;
+<img src="./files/DFG_universum_500.png">
+</div>
 
-## Adaptive landing page of agency of digital services and one of its examle of the cases (uniersum).
+## Adaptive landing page.

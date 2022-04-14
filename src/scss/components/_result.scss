@@ -1,24 +1,59 @@
 .result {
     padding: 130px 0 0;
 
+    @media #{$screen-tablet} {
+        padding: 75px 0 0;
+    }
+
+    @media #{$screen-mobile} {
+        padding: 50px 0 0;
+    }
+
     &__inner {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
         margin-bottom: 115px;
+
+        @media #{$screen-tablet} {
+            align-items: center;
+            margin-bottom: 70px;
+        }
+
+        @media #{$screen-mobile} {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
     }
 
     &__list {
         width: 600px;
+        margin-right: 20px;
+
+        @media #{$screen-mobile} {
+            width: 100%;
+        }
     }
 
     &__list-item {
         font-weight: 400;
-        font-size: 20px;
+        font-size: $font-size-large;
         line-height: 26px;
         padding-left: 40px;
         position: relative;
         margin-bottom: 30px;
+
+        @media #{$screen-tablet} {
+            font-size: $font-size-medium;
+            line-height: 24px;
+        }
+
+        @media #{$screen-mobile} {
+            font-size: $font-size-normal;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
 
         &::before {
             position: absolute;
@@ -38,10 +73,18 @@
 
     &__info {
         width: 495px;
+
+        @media #{$screen-mobile} {
+            width: 100%;
+        }
     }
 
     &__image {
         margin: 0 auto;
+
+        @media #{$screen-mobile} {
+            display: none;
+        }
     }
 
     &__banner {
@@ -53,6 +96,13 @@
         background-color: $bg-gray;
         border-radius: 8px;
         margin-top: 60px;
+
+        @media #{$screen-mobile} {
+            padding: 20px;
+            margin-top: 20px;
+            font-size: $font-size-medium;
+            line-height: 24px;
+        }
     }
 
     &__info-pannel {
@@ -64,5 +114,11 @@
         background-color: $accent;
         border-radius: 8px;
         text-align: center;
+
+        @media #{$screen-mobile} {
+            padding: 20px;
+            font-size: $font-size-large;
+            line-height: 25px;
+        }
     }
 }

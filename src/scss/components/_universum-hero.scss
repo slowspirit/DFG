@@ -4,19 +4,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
+
+    @media #{$screen-mobile} {
+        padding-top: 20px;
+    }
 
     &__top {
         display: flex;
-        // align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
-        // overflow: hidden;
+
+        @media #{$screen-mobile} {
+            flex-direction: column;
+        }
     }
 
     &__info {
         width: 678px;
-        flex: 1 0 auto;
+        flex: 0 0 auto;
         margin-top: 50px;
         margin-right: 21px;
+
+        @media #{$screen-tablet} {
+            width: 400px;
+        }
+
+        @media #{$screen-mobile} {
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
     }
 
     &__subtitle {
@@ -28,14 +46,37 @@
 
     &__title {
         margin-bottom: 57px;
+
+        @media #{$screen-mobile} {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__image-box {
+        display: flex;
+        flex: 0 0 auto;
+    }
+
+    &__image {
+        align-self: center;
     }
 
     &__table {
-        width: 1012px;
+        max-width: 1012px;
         border-collapse: collapse;
         font-weight: 400;
         font-size: 24px;
         line-height: 31px;
+
+        @media #{$screen-tablet} {
+            font-size: $font-size-large;
+            line-height: 28px;
+        }
+
+        @media #{$screen-mobile} {
+            font-size: $font-size-medium;
+            line-height: 24px;
+        }
 
         tr {
             &:first-child {
@@ -49,9 +90,23 @@
             border-bottom: 1px solid rgba($accent, .15);
             padding: 20px 0;
 
+            @media #{$screen-mobile} {
+                padding: 10px 0;
+                vertical-align: top;
+            }
+
             &:first-child {
                 width: 310px;
                 color: $boulder;
+
+                @media #{$screen-tablet} {
+                    width: 250px;
+                }
+
+                @media #{$screen-mobile} {
+                    width: 100px;
+                    padding-right: 10px;
+                }
             }
         }
 

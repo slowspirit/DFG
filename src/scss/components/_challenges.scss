@@ -1,21 +1,46 @@
 .challenges {
     padding: 130px 0 0;
 
+    @media #{$screen-tablet} {
+        padding: 70px 0 0;
+    }
+
+    @media #{$screen-mobile} {
+        padding: 50px 0 0;
+    }
+
     &__info {
         display: flex;
         margin-bottom: 40px;
+
+        @media #{$screen-mobile} {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
     }
 
     &__col {
         width: 600px;
         margin-right: 60px;
         margin-bottom: 0;
-        font-size: 20px;
+        font-size: $font-size-large;
         line-height: 26px;
+
+        @media #{$screen-mobile} {
+            width: 100%;
+            font-size: $font-size-normal;
+            line-height: 20px;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
 
         &:last-child {
             width: 459px;
             margin-right: 0;
+
+            @media #{$screen-mobile} {
+                width: 100%;
+            }
         }
     }
 }

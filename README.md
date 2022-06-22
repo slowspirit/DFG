@@ -1,9 +1,6 @@
 # DFG
-## Адаптивная верстка лендинга.
+### Responsiveive landing page for the development company.
+### Адаптивная верстка лендинга для девелоперской компании.
 https://slowspirit.github.io/DFG/
-<div>
-<img src="./files/DFG_main_500.png">&thinsp;&thinsp;
-<img src="./files/DFG_universum_500.png">
-</div>
 
-## Adaptive landing page.
+<img src="./DFG_mockup_700.jpg">&thinsp;&thinsp;
